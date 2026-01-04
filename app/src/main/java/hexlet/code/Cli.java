@@ -10,22 +10,17 @@ public final class Cli {
     
     public static void greetUser() {
         System.out.println("Welcome to the Brain Games!");
-        String userName = getUserName();
-        System.out.println("Hello, " + userName + "!");
-    }
-    
-    public static String getUserName() {
         System.out.print("May I have your name? ");
         
         try (Scanner scanner = new Scanner(System.in)) {
             if (scanner.hasNextLine()) {
-                String name = scanner.nextLine().trim();
-                return name.isEmpty() ? "Guest" : name;
+                String name = scanner.nextLine();
+                System.out.println("Hello, " + name + "!");
+            } else {
+                System.out.println("Hello!");
             }
         } catch (Exception e) {
-            // Игнорируем ошибки ввода
+            System.out.println("Hello, Guest!");
         }
-        
-        return "Guest";
     }
-} 
+}

@@ -36,7 +36,7 @@ sonar {
     property("sonar.organization", "trylave")
   }
 }
-checkstyle {
+/*checkstyle {
     toolVersion = "10.12.5"
     
     // В Kotlin DSL используется isIgnoreFailures вместо ignoreFailures
@@ -45,7 +45,7 @@ checkstyle {
     // Другие настройки
     maxErrors = 0
     maxWarnings = 0
-}
+}*/
 
 // Альтернативный вариант конфигурации
 tasks.withType<Checkstyle>().configureEach {

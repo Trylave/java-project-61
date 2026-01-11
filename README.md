@@ -3,3 +3,4 @@
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Trylave_java-project-61&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Trylave_java-project-61)
 [![Brain Games Demo](https://asciinema.org/a/iXfG6R0MWqA9XMiUqi87Eaz1J.svg)](https://asciinema.org/a/iXfG6R0MWqA9XMiUqi87Eaz1J)
 [![Game GCD](https://asciinema.org/a/1zx4TIweKWbiIoNr.svg)](https://asciinema.org/a/1zx4TIweKWbiIoNr)
+[![Progression Demo](https://asciinema.org/a/VMB4TmYv2YqgTyDu.svg)](https://asciinema.org/a/VMB4TmYv2YqgTyDu)

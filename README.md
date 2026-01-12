@@ -4,3 +4,4 @@
 [![Brain Games Demo](https://asciinema.org/a/iXfG6R0MWqA9XMiUqi87Eaz1J.svg)](https://asciinema.org/a/iXfG6R0MWqA9XMiUqi87Eaz1J)
 [![Game GCD](https://asciinema.org/a/1zx4TIweKWbiIoNr.svg)](https://asciinema.org/a/1zx4TIweKWbiIoNr)
 [![Progression Demo](https://asciinema.org/a/VMB4TmYv2YqgTyDu.svg)](https://asciinema.org/a/VMB4TmYv2YqgTyDu)
+[![Prime Demo](https://asciinema.org/a/mIonSj4mP5ZnbLgt.svg)](https://asciinema.org/a/mIonSj4mP5ZnbLgt)

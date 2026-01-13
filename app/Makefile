@@ -3,3 +3,6 @@
 run-dist:  ## Запустить приложение из собранного дистрибутива
 	./build/install/app/bin/app
 
+build: ## сборка проекта =Р
+	./gradlew build
+

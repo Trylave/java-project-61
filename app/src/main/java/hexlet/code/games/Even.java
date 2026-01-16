@@ -3,8 +3,8 @@ package hexlet.code;
 import java.util.Random;
 
 public class Even implements Game {
+    private static final int ROUNDS_COUNT = 3;
     private static final int MAX_NUMBER = 100;
-    private final Random random = new Random();
     
     @Override
     public String getRules() {
@@ -12,16 +12,25 @@ public class Even implements Game {
     }
     
     @Override
-    public String[] generateQuestion() {
-        int number = random.nextInt(MAX_NUMBER);
-        boolean isEven = isEven(number);
-        String correctAnswer = isEven ? "yes" : "no";
+    public String[][] getQuestions() {
+        String[][] questions = new String[ROUNDS_COUNT][2];
+        Random random = new Random();
         
-        return new String[]{String.valueOf(number), correctAnswer};
+        for (int i = 0; i < ROUNDS_COUNT; i++) {
+            int number = random.nextInt(MAX_NUMBER);
+            boolean isEven = number % 2 == 0;
+            String correctAnswer = isEven ? "yes" : "no";
+            
+            questions[i][0] = String.valueOf(number);
+            questions[i][1] = correctAnswer;
+        }
+        
+        return questions;
     }
     
-    // Предикат для проверки на чётность
-    private boolean isEven(int number) {
-        return number % 2 == 0;
+    // ВАЖНО: добавляем статический метод play()
+    public static void play() {
+        Even game = new Even();
+        Engine.start(game.getRules(), game.getQuestions());
     }
 }
